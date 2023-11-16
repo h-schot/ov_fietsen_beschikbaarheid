@@ -32,7 +32,7 @@ def app(url):
     # station_code = locations[station_name]
     station_code = station_name
 
-    datum = st.date_input("Datum", datetime.today(), min_value=datetime.today()+timedelta(days=-140), max_value=datetime.today()+timedelta(days=14))
+    datum = st.date_input("Datum", datetime.today(), min_value=datetime.today(), max_value=datetime.today()+timedelta(days=14))
     datum = str(datum)
 
     tijd = st.time_input("Tijd", datetime.now())
